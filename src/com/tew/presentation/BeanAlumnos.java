@@ -90,7 +90,7 @@ public class BeanAlumnos implements Serializable {
 			} else {
 				service.updateAlumno(alumno);
 			}
-			// Actualizamos el javabean de alumnos inyectado en la tabla
+			// Actualizamos el swjavabean de alumnos inyectado en la tabla
 			alumnos = (Alumno[]) service.getAlumnos().toArray(new Alumno[0]);
 			return "exito";
 		} catch (Exception e) {
